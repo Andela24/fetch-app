@@ -1,0 +1,136 @@
+.match-overlay {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.7);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: 1000;
+  }
+  
+  .match-modal {
+    background-color: white;
+    border-radius: 12px;
+    width: 90%;
+    max-width: 800px;
+    max-height: 90vh;
+    overflow-y: auto;
+    position: relative;
+    box-shadow: 0 8px 24px rgba(0, 0, 0, 0.2);
+    animation: fadeIn 0.3s ease-out;
+  }
+  
+  @keyframes fadeIn {
+    from {
+      opacity: 0;
+      transform: translateY(20px);
+    }
+    to {
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }
+  
+  .close-button {
+    position: absolute;
+    top: 16px;
+    right: 16px;
+    background-color: transparent;
+    color: #555;
+    border: none;
+    font-size: 24px;
+    cursor: pointer;
+    padding: 0;
+    width: 32px;
+    height: 32px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+  }
+  
+  .close-button:hover {
+    background-color: rgba(0, 0, 0, 0.1);
+  }
+  
+  .match-content {
+    padding: 32px;
+  }
+  
+  .match-content h2 {
+    color: #4a7abc;
+    text-align: center;
+    margin-bottom: 24px;
+    font-size: 24px;
+  }
+  
+  .matched-dog {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 24px;
+  }
+  
+  @media (min-width: 768px) {
+    .matched-dog {
+      flex-direction: row;
+      align-items: flex-start;
+    }
+  }
+  
+  .matched-dog-image {
+    width: 100%;
+    max-width: 300px;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  }
+  
+  .matched-dog-image img {
+    width: 100%;
+    height: auto;
+    display: block;
+    object-fit: cover;
+  }
+  
+  .matched-dog-info {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 8px;
+  }
+  
+  .matched-dog-info h3 {
+    font-size: 28px;
+    margin-bottom: 8px;
+    color: #333;
+  }
+  
+  .match-breed {
+    font-size: 18px;
+    font-weight: 500;
+    color: #555;
+  }
+  
+  .match-age, .match-location {
+    color: #666;
+    font-size: 16px;
+  }
+  
+  .match-message {
+    margin-top: 16px;
+    padding: 16px;
+    background-color: #f0f7ff;
+    border-radius: 8px;
+    border-left: 4px solid #4a7abc;
+    line-height: 1.6;
+  }
+  
+  .match-message strong {
+    color: #4a7abc;
+    font-weight: 600;
+  }

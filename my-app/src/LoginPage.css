@@ -1,0 +1,82 @@
+.login-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background-color: #f0f8ff;
+    background-image: url('https://placehold.co/1200x800?text=Dogs+Background');
+    background-size: cover;
+    background-position: center;
+  }
+  
+  .login-card {
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 4px 16px rgba(0, 0, 0, 0.1);
+    padding: 32px;
+    width: 90%;
+    max-width: 400px;
+    text-align: center;
+  }
+  
+  .login-title {
+    color: #4a7abc;
+    margin-bottom: 8px;
+  }
+  
+  .login-subtitle {
+    color: #666;
+    font-weight: 400;
+    margin-bottom: 24px;
+  }
+  
+  .login-form {
+    display: flex;
+    flex-direction: column;
+    gap: 16px;
+  }
+  
+  .form-group {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+  }
+  
+  .form-group label {
+    margin-bottom: 4px;
+    font-weight: 500;
+    color: #444;
+  }
+  
+  .form-group input {
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+  }
+  
+  .login-button {
+    margin-top: 16px;
+    padding: 12px;
+    background-color: #4a7abc;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 500;
+    cursor: pointer;
+    transition: background-color 0.2s;
+  }
+  
+  .login-button:hover {
+    background-color: #3a69a8;
+  }
+  
+  .error-message {
+    color: #d93025;
+    background-color: #fce8e6;
+    padding: 8px;
+    border-radius: 4px;
+    text-align: center;
+  }
+  

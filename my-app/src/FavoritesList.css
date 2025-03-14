@@ -1,0 +1,28 @@
+.favorites-panel {
+    width: 250px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, 0.1);
+    padding: 16px;
+    display: flex;
+    flex-direction: column;
+    height: fit-content;
+  }
+  
+  .favorites-panel h2 {
+    color: #4a7abc;
+    margin-bottom: 16px;
+    font-size: 18px;
+  }
+  
+  .no-favorites {
+    color: #777;
+    text-align: center;
+    padding: 16px 0;
+  }
+  
+  .favorites-list {
+    max-height: 400px;
+    overflow-y: auto;
+    margin-bottom: 16px;
+  }
